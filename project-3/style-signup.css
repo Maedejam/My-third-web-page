@@ -1,0 +1,83 @@
+@import url('https://fonts.google.com/specimen/Kumbh+Sans');
+
+body {
+    background: linear-gradient(to bottom , #F8F8F8 70% , #1C1F2C 30%);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kumbh Sans' , sans-serif;
+    padding: 40px;
+    margin: 20px 20px;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 300;
+    text-align: left;
+}
+
+form {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 320px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 60px auto 10px auto;
+}
+
+input , select {
+    width: 340px;
+    height: 28px;
+    border: 1px solid #d7d9db;
+    border-radius: 3px;
+    margin: auto;
+}
+
+button {
+    background-color: #5175FF;
+    color: white;
+    width: 340px;
+    height: 40px;
+    border-radius: 20px;
+    border-color: #5175FF;
+    margin: 30px;
+}
+
+.box {
+    margin: 12px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    form {
+        width: 750px;
+    }
+    input , select , button {
+        width: 600px;
+    }
+}
+@media (min-width: 1024px) {
+    body {
+        background: linear-gradient(to right , #F8F8F8 65% , #1C1F2C 35%);
+        grid-template-columns: repeat(2 , 1fr);
+        grid-template-areas: 
+        'a a'
+        'b c';
+
+    }
+
+    .icon{
+        grid-area: a;
+    }
+    .section {
+        grid-area: b;
+    }
+    .form {
+        grid-area: c;
+    }
+}

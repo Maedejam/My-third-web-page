@@ -1,0 +1,157 @@
+@import url('https://fonts.google.com/specimen/Kumbh+Sans');
+
+body {
+    background: linear-gradient(to bottom , #F8F8F8 65% , #1C1F2C 35%);
+    width: 95%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kumbh Sans' , sans-serif;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 300;
+}
+
+button {
+    background-color:#5175FF;
+    height: 40px;
+    width: 150px;
+    margin: auto;
+    border-radius: 20px;
+    border-color: #5175FF;
+}
+
+.box{
+    width: 300px;
+    height: 320px;
+    color:#212529;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 25px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    line-height: 32px;
+}
+
+.container {
+    margin: 30px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .pic {
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        padding: 30px ;
+        margin: 10px auto;
+        grid-template-columns: repeat(2 , 1fr);
+        grid-template-areas: 
+        'a a'
+        'b c'
+        'd d'
+        'e e'
+        'f f'
+        'g g'
+        ;
+    }
+
+    .box {
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        width: 250% ;
+        height: 50%;
+        text-align: left;
+    }
+
+    .icon {
+        grid-area: a;
+    }
+    .prag {
+        grid-area: b;
+    }
+    .pic {
+        grid-area: c;
+    }
+    .box1 {
+        grid-area: d;
+    }
+    .box2 {
+        grid-area: e;
+    }
+    .box3 {
+        grid-area: f;
+    }
+    .box4 {
+        grid-area: g;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    body {
+        margin: 10px 20px;
+        display: grid;
+        grid-template-columns: repeat(6 , 1fr);
+        grid-template-areas: 
+        'a a a a a a'
+        'b b b c c c'
+        'd d e e f f'
+        'g g g g g g'
+        ;
+        gap: 50px;
+    }
+
+    .icon {
+        grid-area: a;
+    }
+    .prag {
+        grid-area: b;
+    }
+    .pic {
+        grid-area: c;
+    }
+    .box1 {
+        grid-area: d;
+    }
+    .box2 {
+        grid-area: e;
+        position: absolute;
+        left: 500px;
+        bottom: 0;
+    }
+    .box3 {
+        grid-area: f;
+        position: absolute;
+        left: 1000px;
+        bottom: 0px;
+    }
+    .box4 {
+        grid-area: g;
+    }
+
+    .box {
+        width: 350px;
+        height: 400px;
+        margin: 20px;
+    }
+    .container {
+        position: relative;
+        margin: 5px;
+    }
+}
